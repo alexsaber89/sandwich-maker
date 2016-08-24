@@ -2,52 +2,56 @@
 <html>
 <head>
   <title>Sandwich Maker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <div id="user_selections">
-    <select multiple id="bread">
-      <option value="choose" selected>Choose</option>
-      <option value="white">White</option>
-      <option value="wheat">Wheat</option>
-      <option value="rye">Rye</option>
-      <option value="sourdough">Sourdough</option>
-      <option value="no_bread">No bread</option>
-    </select>
-    <select multiple id="meat">
-      <option value="choose" selected>Choose</option>
-      <option value="ham">Ham</option>
-      <option value="turkey">Turkey</option>
-      <option value="bologna">Bologna</option>
-      <option value="salami">Salami</option>
-      <option value="no_meat">No meat</option>
-    </select>
-    <select multiple id="cheese">
-      <option value="choose" selected>Choose</option>
-      <option value="american">American</option>
-      <option value="swiss">Swiss</option>
-      <option value="colby">Colby</option>
-      <option value="cheddar">Cheddar</option>
-      <option value="no_cheese">No cheese</option>
-    </select>
-    <select multiple id="condiments">
-      <option value="choose" selected>Choose</option>
-      <option value="mustard">Mustard</option>
-      <option value="mayo">Mayo</option>
-      <option value="italian">Italian</option>
-      <option value="oil">Oil</option>
-      <option value="no_condiments">No condiments</option>
-    </select>
-    <select multiple id="veggies">
-      <option value="choose" selected>Choose</option>
-      <option value="ham">Ham</option>
-      <option value="turkey">Turkey</option>
-      <option value="bologna">Bologna</option>
-      <option value="salami">Salami</option>
-      <option value="no_veggies">No veggies</option>
-    </select>
+    <div id="bread">
+      <input type="radio" name ="bread" value="White">White<br />
+      <input type="radio" name ="bread" value="Wheat">Wheat<br />
+      <input type="radio" name ="bread" value="Rye">Rye<br />
+      <input type="radio" name ="bread" value="Sourdough">Sourdough<br />
+      <input type="radio" name ="bread" value="No bread">No bread<br />
+    </div>
+    <div id="meat">
+      <input type="checkbox" value="Ham">Ham<br />
+      <input type="checkbox" value="Turkey">Turkey<br />
+      <input type="checkbox" value="Bologna">Bologna<br />
+      <input type="checkbox" value="Salami">Salami<br />
+      <input type="checkbox" value="No meat">No meat<br />
+    </div>
+    <div id="cheese">
+      <input type="checkbox" value="American">American<br />
+      <input type="checkbox" value="Swiss">Swiss<br />
+      <input type="checkbox" value="Colby">Colby<br />
+      <input type="checkbox" value="Cheddar">Cheddar<br />
+      <input type="checkbox" value="No cheese">No cheese<br />
+    </div>
+    <div id="condiments">
+      <input type="checkbox" value="Mustard">Mustard<br />
+      <input type="checkbox" value="Mayo">Mayo<br />
+      <input type="checkbox" value="Italian">Italian<br />
+      <input type="checkbox" value="Oil">Oil<br />
+      <input type="checkbox" value="No condiments">No condiments<br />
+    </div>
+    <div id="veggies">
+      <input type="checkbox" value="Lettuce">Lettuce<br />
+      <input type="checkbox" value="Tomato">Tomato<br />
+      <input type="checkbox" value="Pickles">Pickles<br />
+      <input type="checkbox" value="Jalapenos">Jalapenos<br />
+      <input type="checkbox" value="No veggies">No veggies<br />
+    </div>
+  </div><br />
+  <div id="final_price">
   </div>
   <div id="output">
   </div>
 <script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
+<script type="text/javascript" src="javascripts/bread.js"></script>
+<script type="text/javascript" src="javascripts/meat.js"></script>
+<script type="text/javascript" src="javascripts/cheese.js"></script>
+<script type="text/javascript" src="javascripts/condiments.js"></script>
+<script type="text/javascript" src="javascripts/veggies.js"></script>
+<script type="text/javascript" src="javascripts/main.js"></script>
 </body>
 </html>
