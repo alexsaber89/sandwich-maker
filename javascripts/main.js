@@ -8,7 +8,9 @@ var selectedTopping;
 document.getElementById("bread").addEventListener("change",determineSelectedBread);
 function determineSelectedBread(event) {
   selectedTopping = event.target.value;
-  finalSandwichPrice += SandwichMaker.addBread(selectedTopping);
+  SandwichMaker.addBread(selectedTopping);
+  var getBread = SandwichMaker.getBread();
+  finalSandwichPrice += addTopping(getBread);
   document.getElementById("output").innerHTML += selectedTopping + "<br />";
   document.getElementById("final_price").innerHTML = "Final Price: $" + finalSandwichPrice;
 }
