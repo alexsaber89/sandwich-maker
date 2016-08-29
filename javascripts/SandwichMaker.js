@@ -7,6 +7,9 @@ var SandwichMaker = (function() {
   return {
     addTopping: function(toppingPrice) {
       totalPrice += toppingPrice;
+    },
+    getTopping: function() {
+      return totalPrice;
     }
   };
 })();
