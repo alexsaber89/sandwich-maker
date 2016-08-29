@@ -9,44 +9,47 @@ document.getElementById("bread").addEventListener("change",determineSelectedBrea
 function determineSelectedBread(event) {
   selectedTopping = event.target.value;
   SandwichMaker.addBread(selectedTopping);
-  var getBread = SandwichMaker.getBread();
-  finalSandwichPrice += addTopping(getBread);
-  document.getElementById("output").innerHTML += selectedTopping + "<br />";
+  finalSandwichPrice = SandwichMaker.getTopping();
   document.getElementById("final_price").innerHTML = "Final Price: $" + finalSandwichPrice;
+  document.getElementById("output").innerHTML += selectedTopping + "<br />";
 }
 
 //Meat
 document.getElementById("meat").addEventListener("change",determineSelectedMeat);
 function determineSelectedMeat(event) {
   selectedTopping = event.target.value;
-  finalSandwichPrice += SandwichMaker.addMeat(selectedTopping);
-  document.getElementById("output").innerHTML += selectedTopping + "<br />";
+  SandwichMaker.addMeat(selectedTopping);
+  finalSandwichPrice = SandwichMaker.getTopping();
   document.getElementById("final_price").innerHTML = "Final Price: $" + finalSandwichPrice;
+  document.getElementById("output").innerHTML += selectedTopping + "<br />";
 }
 
 //Cheese
 document.getElementById("cheese").addEventListener("change",determineSelectedCheese);
 function determineSelectedCheese(event) {
   selectedTopping = event.target.value;
-  finalSandwichPrice += SandwichMaker.addCheese(selectedTopping);
-  document.getElementById("output").innerHTML += selectedTopping + "<br />";
+  SandwichMaker.addCheese(selectedTopping);
+  finalSandwichPrice = SandwichMaker.getTopping();
   document.getElementById("final_price").innerHTML = "Final Price: $" + finalSandwichPrice;
+  document.getElementById("output").innerHTML += selectedTopping + "<br />";
 }
 
 //Condiments
 document.getElementById("condiments").addEventListener("change",determineSelectedCondiments);
 function determineSelectedCondiments(event) {
   selectedTopping = event.target.value;
-  finalSandwichPrice += SandwichMaker.addCondiments(selectedTopping);
-  document.getElementById("output").innerHTML += selectedTopping + "<br />";
+  SandwichMaker.addCondiments(selectedTopping);
+  finalSandwichPrice = SandwichMaker.getTopping();
   document.getElementById("final_price").innerHTML = "Final Price: $" + finalSandwichPrice;
+  document.getElementById("output").innerHTML += selectedTopping + "<br />";
 }
 
 //Veggies
 document.getElementById("veggies").addEventListener("change",determineSelectedVeggies);
 function determineSelectedVeggies(event) {
   selectedTopping = event.target.value;
-  finalSandwichPrice += SandwichMaker.addVeggies(selectedTopping);
-  document.getElementById("output").innerHTML += selectedTopping + "<br />";
+  SandwichMaker.addVeggies(selectedTopping);
+  finalSandwichPrice = SandwichMaker.getTopping();
   document.getElementById("final_price").innerHTML = "Final Price: $" + finalSandwichPrice;
+  document.getElementById("output").innerHTML += selectedTopping + "<br />";
 }

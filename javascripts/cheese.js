@@ -12,7 +12,8 @@ var SandwichMaker = (function(cheese) {
 
   // Augment the original object with another method
   cheese.addCheese = function(selectedTopping) {
-    return cheeseObject[selectedTopping];
+    toppingPrice = cheeseObject[selectedTopping];
+    SandwichMaker.addTopping(toppingPrice);
   };
 
   // Return the new, augmented object with the new method on it
