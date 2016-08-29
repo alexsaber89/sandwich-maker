@@ -1,5 +1,6 @@
 // This SandwichMaker IIFE augments the original one
 var SandwichMaker = (function(cheese) {
+  var toppingPrice;
 
   // Private variable to store the different cheese prices
   var cheeseObject = {

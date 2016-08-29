@@ -1,5 +1,6 @@
 // This SandwichMaker IIFE augments the original one
 var SandwichMaker = (function(veggies) {
+  var toppingPrice;
 
   // Private variable to store the different meat prices
   var veggiesObject = {
